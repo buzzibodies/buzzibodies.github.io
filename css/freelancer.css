@@ -103,7 +103,7 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #2C3E50;
+  background: transparent;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -122,10 +122,10 @@ header .intro-text .skills {
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-nav li a {
-  color: white;
+  color: #efefef;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: #fff;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
@@ -133,13 +133,13 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #18BC9C;
+  background: transparent;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #18BC9C;
+  background: transparent;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -168,6 +168,7 @@ header .intro-text .skills {
   }
   .navbar-custom.affix {
     padding: 10px 0;
+	background: rgba(23, 191, 158, 0.82);
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
