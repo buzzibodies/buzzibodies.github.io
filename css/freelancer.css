@@ -515,3 +515,22 @@ fieldset[disabled] .btn-success.active {
 div#maincontent {
   outline: none;
 }
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+}
+
+.dropdown-menu>li>a {
+	color: #999 !important;
+    background-color: #fff;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	color: #111 !important;
+    background-color: #fff;
+}
