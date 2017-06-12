@@ -21,7 +21,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #18BC9C;
+  color: #fff;
 }
 h1,
 h2,
@@ -100,6 +100,18 @@ hr.star-primary:after {
   background-color: white;
   color: #2C3E50;
 }
+.pencil:after {
+  content: "\f040" !important;
+}
+.map:after {
+  content: "\f278" !important;
+}
+.smile:after {
+  content: "\f118" !important;
+}
+.child:after {
+  content: "\f1ae" !important;
+}
 .img-centered {
   margin: 0 auto;
 }
@@ -122,11 +134,13 @@ header img {
   margin: 0 auto 20px;
 }
 header .intro-text .name {
+  color: #da2679;
   display: block;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
+  text-shadow: 0px 0px 11px rgba(30, 30, 30, 0.51);
 }
 header .intro-text .skills {
   font-size: 1.25em;
@@ -143,6 +157,14 @@ header .intro-text .skills {
   header .intro-text .skills {
     font-size: 1.75em;
   }
+}
+.success .intro-text .name {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4em;
+  margin-bottom: 50px;
 }
 .navbar-custom {
   background: #4081bf;
@@ -225,7 +247,7 @@ header .intro-text .skills {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 section h2 {
   margin: 0;
@@ -348,14 +370,14 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #2C3E50;
+  background-color: #da2679;
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #233140;
+  background-color: #ffa500;
 }
 .btn-outline {
   color: white;
@@ -369,7 +391,7 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #4081bf;
+  color: #da2679;
   background: white;
   border: solid 2px white;
 }
@@ -592,6 +614,21 @@ div#maincontent {
 .navbar-fixed-bottom .navbar-collapse, 
 .navbar-fixed-top .navbar-collapse {
 	max-height: none;
+}
+
+.bg-main {
+	margin-top: 100px;
+	height: 450px;
+	background: url("../img/bg-main.jpg") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.caption {
+	text-align:center;
+	margin-top: -100px;
 }
 
 /* Large Devices, Wide Screens */
