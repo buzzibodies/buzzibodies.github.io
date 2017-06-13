@@ -737,3 +737,11 @@ div#maincontent {
 @media only screen and (max-width : 320px) {
 
 }
+
+.blue-link {
+	color: #337ab7;
+}
+
+.blue-link:hover {
+	color: #23527c;
+}
