@@ -190,6 +190,8 @@ header .intro-text .skills {
 .navbar-custom .navbar-nav li a {
   color: #fff;
   border: solid 3px transparent;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 .navbar-custom .navbar-nav li a:hover {
   color: #fff;
@@ -248,6 +250,19 @@ header .intro-text .skills {
     font-size: 1.5em;
   }
 }
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-brand {
+    float: left;
+    height: auto;
+    padding: 10px 0 0 15px;
+    font-size: 18px;
+    line-height: 20px;
+} 
+
 section {
   padding: 60px 0;
 }
@@ -259,6 +274,19 @@ section.success {
   background: #4081bf;
   color: white;
 }
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.nav-up {
+  top: -90px;
+}
+
 @media (max-width: 767px) {
   section {
     padding: 75px 0;

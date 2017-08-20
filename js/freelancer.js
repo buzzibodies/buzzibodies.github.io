@@ -14,7 +14,7 @@
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
-        target: '.navbar-fixed-top',
+        target: '.navbar-custom',
         offset: 51
     });
 
@@ -25,12 +25,14 @@
     });
     */
     // Offset for Main Navigation
-    $('#mainNav').affix({
+    
+	$('#mainNav').affix({
         offset: {
-            top: 100
+            top: 0
         }
     })
-
+    
+	
     // Floating label headings for the contact form
     $(function() {
         $("body").on("input propertychange", ".floating-label-form-group", function(e) {
