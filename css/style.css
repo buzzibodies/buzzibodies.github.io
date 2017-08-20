@@ -111,6 +111,7 @@ hr.star-primary:after {
 }
 .child:after {
   content: "\f1ae" !important;
+  background: #da2679 !important;
 }
 .img-centered {
   margin: 0 auto;
@@ -307,11 +308,17 @@ section.success {
   margin: 0;
 }
 #what-we-do * {
-  z-index: 2;
+ /* z-index: 2; */
 }
+
+#activities {
+	background: #da2679;
+}
+
 @media (min-width: 767px) {
   #what-we-do .portfolio-item {
     margin: 0 0 30px;
+	padding: 10px;	
   }
 }
 .floating-label-form-group {
@@ -627,8 +634,19 @@ div#maincontent {
 }
 
 .caption {
+	
+	margin-top: -34px;
+}
+
+.caption h4 {
 	text-align:center;
-	margin-top: -100px;
+	color: #fff;
+	text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+}
+
+.caption p {
+	font-size: 16px;
+	text-align: justify;
 }
 
 /* Large Devices, Wide Screens */
@@ -724,6 +742,7 @@ div#maincontent {
 	
 	img {
 		width: 768px;
+		margin-bottom: 50px;
 	}
 }
 
