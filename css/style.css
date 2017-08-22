@@ -23,6 +23,9 @@ a:active,
 a.active {
   color: #fff;
 }
+
+h1 { margin-top: 0px; }
+
 h1,
 h2,
 h3,
@@ -217,7 +220,7 @@ header .intro-text .skills {
   text-transform: uppercase;
   font-size: 10px;
   border-color: transparent;
-} 
+}
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
@@ -258,10 +261,10 @@ header .intro-text .skills {
 .navbar-brand {
     float: left;
     height: auto;
-    padding: 10px 0 0 15px;
+    padding: 7px 0 0 15px;
     font-size: 18px;
     line-height: 20px;
-} 
+}
 
 section {
   padding: 60px 0;
@@ -346,7 +349,7 @@ section.success {
 @media (min-width: 767px) {
   #what-we-do .portfolio-item {
     margin: 0 0 30px;
-	padding: 10px;	
+	padding: 10px;
   }
 }
 .floating-label-form-group {
@@ -524,6 +527,14 @@ fieldset[disabled] .btn-success.active {
   font-size: 20px;
   line-height: 45px;
 }
+.btn-blue {
+  border-color: #4081bf;
+  color: #4081bf;
+}
+.btn-blue:hover {
+  border-color: #da2679;
+  color: #da2679;
+}
 .scroll-top {
   position: fixed;
   right: 2%;
@@ -646,15 +657,15 @@ div#maincontent {
 	overflow-y: visible;
 }
 
-.navbar-fixed-bottom .navbar-collapse, 
+.navbar-fixed-bottom .navbar-collapse,
 .navbar-fixed-top .navbar-collapse {
 	max-height: none;
 }
 
 .bg-main {
-	margin-top: 100px;
+	margin-top: 84px;
 	height: 450px;
-	background: url("../img/bg-main.jpg") no-repeat center center; 
+	background: url("../img/bg-main.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -662,7 +673,7 @@ div#maincontent {
 }
 
 .caption {
-	
+
 	margin-top: -34px;
 }
 
@@ -679,11 +690,14 @@ div#maincontent {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+      margin-left: 0;
+      margin-bottom: 25px;
+    }
 }
 
  /* Site Nav */
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1030px) {
         .navbar-nav .open .dropdown-menu {
             position: static;
             float: none;
@@ -728,8 +742,8 @@ div#maincontent {
         }
         .navbar-nav>li {
             float: none;
-			margin-top: 4px;
-			margin-left: 4px;
+			      margin-top: 4px;
+			      margin-left: 4px;
         }
         .navbar-nav>li>a {
             padding-top: 10px;
@@ -739,12 +753,14 @@ div#maincontent {
             float: none;
             margin: 15px 0;
         }
-        /* since 3.1.0 */
-        .navbar-collapse.collapse.in { 
+        .navbar-collapse.collapse.in {
             display: block!important;
         }
         .collapsing {
             overflow: hidden!important;
+        }
+        .navbar-brand {
+            padding: 12px 0 0 15px;
         }
     }
 
@@ -758,28 +774,46 @@ div#maincontent {
 	.bg-main {
         margin-top: 50px;
 	}
-	
+
 	.navbar-custom .navbar-nav {
 		float: none !important;
 	}
-	
-	.navbar-nav>li {
+
+	.navbar-nav > li {
 		margin-top: 4px;
 		margin-left: 4px;
 	}
-	
+
 	img {
 		width: 768px;
 		margin-bottom: 50px;
 	}
+
+  .caption {
+    margin-top: -74px;
+  }
+
+  .navbar-brand {
+      padding: 16px 0 0 15px;
+  }
+
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+    margin-bottom: 18px;
+  }
+
+  header .intro-text .name {
+    font-size: 3em;
+  }
+
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
 }
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
 }
