@@ -168,7 +168,7 @@ header .intro-text .skills {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 4em;
+  font-size: 2em;
   margin-bottom: 50px;
 }
 .navbar-custom {
@@ -688,6 +688,11 @@ div#maincontent {
 	text-align: justify;
 }
 
+.top-img {
+    margin: 114px 0 10px;
+    display: inline-block;
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
     .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
@@ -697,7 +702,7 @@ div#maincontent {
 }
 
  /* Site Nav */
-@media (min-width: 768px) and (max-width: 1030px) {
+@media (min-width: 768px) and (max-width: 1230px) {
         .navbar-nav .open .dropdown-menu {
             position: static;
             float: none;
@@ -774,6 +779,11 @@ div#maincontent {
 	.bg-main {
         margin-top: 50px;
 	}
+
+  .top-img {
+      margin: 60px 0 10px;
+      display: inline-block;
+  }
 
 	.navbar-custom .navbar-nav {
 		float: none !important;
